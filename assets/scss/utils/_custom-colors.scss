@@ -1,0 +1,15 @@
+$primary-dark: #1C1C1C;
+$secondary-dark: #2D2D2D;
+$primary-blue: #09ACF5;
+$primary-green: #62DB54;
+
+$custom-colors: (
+  "primary-dark": $primary-dark,
+  "secondary-dark": $secondary-dark,
+  "primary-blue": $primary-blue,
+  "primary-green": $primary-green,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/bootstrap";

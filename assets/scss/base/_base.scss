@@ -1,0 +1,34 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: #212529;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+p,
+span,
+strong {
+  letter-spacing: 0.05em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

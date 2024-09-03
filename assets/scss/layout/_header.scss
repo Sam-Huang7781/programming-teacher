@@ -1,0 +1,18 @@
+.logo {
+  background-image: url(../images/logo.svg); /* Replace with the correct path to your logo */
+  width: 180px;
+  height: 42px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  @media screen and (max-width: 992px) {
+    background-image: url(../images/logo2.svg); 
+  }
+}
+
+ul a:hover{
+  background-color: #909090;
+}

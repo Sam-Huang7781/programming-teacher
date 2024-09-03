@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>homepage</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="hero bg-primary-dark">
+      <div class="container position-relative">
+        <picture>
+          <source
+            srcset="../assets/images/bg_home_mobile.jpg"
+            media="(max-width: 576px)"
+          />
+          <img src="../assets/images/bg_home.jpg" alt="Responsive Image" />
+        </picture>
+        <div
+          class="hero-text position-absolute top-50 start-50 translate-middle px-lg-20 py-lg-12 px-7 py-8 bg-primary-dark border d-flex flex-column align-items-center"
+        >
+          <h2 class="fw-semibold gradient-text fs-lg-10 fs-5">
+            全台最豐富的程式家教
+          </h2>
+          <h2 class="fw-normal text-white fs-lg-10 fs-5">在實踐中化理想為現實</h2>
+          <h3 class="fw-light text-white fs-lg-4 mt-lg-6 fs-3">
+            全台最專業師資｜到府程式家教｜客製化課程
+          </h3>
+          <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-0 start-0 translate-middle">
+            <rect width="10" height="10" style="fill: white" />
+          </svg>
+          <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-0 start-100 translate-middle">
+            <rect width="10" height="10" style="fill: white" />
+          </svg>
+          <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-100 start-0 translate-middle">
+            <rect width="10" height="10" style="fill: white" />
+          </svg>
+          <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-100 start-100 translate-middle">
+            <rect width="10" height="10" style="fill: white" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
