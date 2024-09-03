@@ -1,7 +1,14 @@
-.gradient-text {
-  background-image: linear-gradient(180deg, #09ACF5, #62DB54);
-  -webkit-background-clip: text; /* Chrome, Safari, Opera */
-  background-clip: text;
-  color: transparent;
-  white-space: nowrap;
+.hero {
+  .gradient-text {
+    background-image: linear-gradient(180deg, #09acf5, #62db54);
+    -webkit-background-clip: text; /* Chrome, Safari, Opera */
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+  }
+  h3 {
+    @media (max-width: 992px) {
+      width: max-content;
+    }
+  }
 }
