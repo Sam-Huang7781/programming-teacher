@@ -1,3 +1,4 @@
+// hero section
 .hero {
   .gradient-text {
     background-image: linear-gradient(180deg, #09acf5, #62db54);
@@ -11,4 +12,41 @@
       width: max-content;
     }
   }
+}
+
+// feature section
+.feature {
+  .board {
+    width: 306px;
+    height: 264px;
+  }
+  .board:hover {
+    border: 2px solid #62db54;
+    border-radius: 12px;
+    background-color: #202020;
+    cursor: pointer;
+  }
+  .board:hover .material-symbols-outlined {
+    background: linear-gradient(45deg, #09acf5, #62db54) !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+  }
+}
+/* 當 hover 在 board 上，讓 feature 下的 h3 出現底線 */
+.feature h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -16px; /* 如果底線要在文字下方一點，可以調整這個值 */
+  width: 20%;
+  height: 2px; /* 邊框的高度 */
+  background: #62db54;
+  display: block; /* 確保底線是塊級元素 */
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+.feature:hover h3:after {
+  transition: 0.3s ease;
+  width: 70%;
 }
