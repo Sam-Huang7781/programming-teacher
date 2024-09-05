@@ -1,0 +1,18 @@
+// 動態底線
+.animated-line h3:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -16px; /* 如果底線要在文字下方一點，可以調整這個值 */
+    width: 60px;
+    height: 2px; /* 邊框的高度 */
+    background: #62db54;
+    display: block; /* 確保底線是區塊元素 */
+    transition: 0.3s ease;   
+    transform: translateX(-50%);
+  }
+  .animated-line:hover h3:after {
+    transition: 0.3s ease;
+    width: 60%;
+  }
+  

@@ -7,7 +7,7 @@
     color: transparent;
     white-space: nowrap;
   }
-  h3 {
+  h4 {
     @media (max-width: 992px) {
       width: max-content;
     }
@@ -41,12 +41,16 @@
   width: 20%;
   height: 2px; /* 邊框的高度 */
   background: #62db54;
-  display: block; /* 確保底線是塊級元素 */
+  display: block; /* 確保底線是區塊元素 */
+  transition: 0.3s ease;
   @media screen and (max-width: 992px) {
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .feature:hover h3:after {
   transition: 0.3s ease;
-  width: 70%;
+  width: 100%;
 }
+
+// procedure section
