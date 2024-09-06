@@ -61,4 +61,26 @@
   }  
 }
 
+// recommend section
+.recommend{
+  .card{
+    width: 306px;
+  }
+  .card:hover{
+    border: 1px solid #62db54;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 992px) {
+    .card {
+      width: 336px;
+    }
+  }
 
+  .class-btn{
+    width: fit-content;
+    background: linear-gradient(45deg, #09acf5, #62db54);
+  }
+  .class-btn:hover{
+    background: linear-gradient(45deg, #62db54, #09acf5);
+  }
+}
