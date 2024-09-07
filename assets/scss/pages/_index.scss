@@ -91,11 +91,10 @@
     height: 616px; /* 設定統一的高度 */
     object-fit: cover; /* 保持圖片比例，不會變形 */
     @media screen and (max-width: 992px) {
-      height: 260px;
-      
+      height: 280px;
     }
   }
-  
+
   .card-img-overlay {
     background-color: rgba(0, 0, 0, 0.3); /* Optional: Adds a darker overlay */
     padding: 50px;
@@ -110,13 +109,19 @@
   background: white;
   display: block; /* 確保底線是區塊元素 */
   transition: 0.3s ease;
+  @media screen and (max-width: 992px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .card:hover h5:after {
-    background-color: #62db54;
-    transition: 0.3s ease;
-    width: 50%;
+  background-color: #62db54;
+  transition: 0.3s ease;
+  width: 50%;
 }
-.card:hover .card-img{
-opacity: 0.9!important;
+.card:hover .card-img {
+  opacity: 0.9 !important;
 }
-
+.card:hover .material-symbols-outlined {
+  color: #62db54;
+}
