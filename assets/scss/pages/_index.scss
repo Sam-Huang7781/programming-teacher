@@ -54,19 +54,19 @@
 }
 
 // learn section
-.learn{
+.learn {
   .swiper-slide {
     width: auto;
     display: inline-block;
-  }  
+  }
 }
 
 // recommend section
-.recommend{
-  .card{
+.recommend {
+  .card {
     width: 306px;
   }
-  .card:hover{
+  .card:hover {
     border: 1px solid #62db54;
     cursor: pointer;
   }
@@ -76,11 +76,38 @@
     }
   }
 
-  .class-btn{
+  .class-btn {
     width: fit-content;
     background: linear-gradient(45deg, #09acf5, #62db54);
   }
-  .class-btn:hover{
+  .class-btn:hover {
     background: linear-gradient(45deg, #62db54, #09acf5);
   }
+}
+
+// banner section
+.banner {
+
+  .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Adds a darker overlay */
+  }
+}
+.banner h5:after {
+  content: "";
+  position: absolute;
+  margin-top: 16px;
+  width: 10%;
+  height: 3px; /* 邊框的高度 */
+  background: white;
+  display: block; /* 確保底線是區塊元素 */
+  transition: 0.3s ease;
+  @media screen and (max-width: 992px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.banner:hover h3:after {
+  color: #62db54;
+  transition: 0.3s ease;
+  width: 100%;
 }
