@@ -159,3 +159,39 @@
     background: transparent;
   }
 }
+
+
+// review section
+.review{
+  .container {
+    background-image: url(../images/bg_share.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .swiper-review{
+    width: 524px;
+    height: 380px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      
+    }
+  }
+  .swiper-pagination-bullet {
+    color: #fff;
+    background: #62db54;
+  }
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 50px;
+    background: #62db54;
+  }
+}
+.joinus{
+  width: 966px;
+  padding: 12px 48px;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    padding: 48px;
+  }
+}
