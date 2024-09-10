@@ -59,6 +59,11 @@
     width: auto;
     display: inline-block;
   }
+  .btn:active {
+    color: #62db54;
+    background-color: #1C1C1C;
+    border-color: #62db54
+  }
 }
 
 // recommend section
