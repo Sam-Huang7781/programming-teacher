@@ -1,0 +1,14 @@
+.teacher {
+  .rainbow-style:before {
+    background-image: linear-gradient(180deg, #09acf5, #62db54);
+    background-clip: text;
+    color: transparent;
+  }
+  .price:hover{
+    cursor: pointer;
+  }
+  .price:hover .left{
+    color:#62db54 !important;
+    cursor: pointer;
+  }
+}
