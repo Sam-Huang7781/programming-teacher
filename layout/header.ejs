@@ -30,14 +30,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item text-center">
-            <a class="nav-link active text-white py-lg-8 px-lg-6" href="./index.html"
+            <a
+              class="nav-link active text-white py-lg-8 px-lg-6"
+              href="./index.html"
               >首頁</a
             >
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-white py-lg-8 px-lg-6" href="./course.html">課程介紹</a>
+            <a class="nav-link text-white py-lg-8 px-lg-6" href="./course.html"
+              >課程介紹</a
+            >
           </li>
-          <li class="nav-item text-center">
+          <li
+            class="nav-item text-center"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
             <a
               class="nav-link text-white py-lg-8 px-lg-6 fs-lg-4 d-flex align-items-center justify-content-center"
               href="#"
@@ -52,3 +60,82 @@
     </nav>
   </div>
 </header>
+
+<!-- Modal -->
+<section
+  class="loginModal modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-secondary-dark border-white text-white">
+      <div class="modal-header position-relative border-0 mt-4">
+        <h5
+          class="modal-title fs-6 position-absolute start-50 top-50 translate-middle"
+          id="loginModalLabel"
+        >
+          登入
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body mx-auto" style="width: 330px">
+        <div class="mb-8">
+          <label for="loginFormControlInput1" class="form-label">信箱</label>
+          <input
+            type="email"
+            class="form-control bg-primary-dark text-white"
+            id="loginFormControlInput1"
+            placeholder="請輸入信箱"
+          />
+        </div>
+        <div>
+          <label for="einputPassword" class="form-label">密碼</label>
+          <input
+            type="password"
+            class="form-control bg-primary-dark text-white"
+            id="inputPassword"
+            placeholder="請輸入密碼"
+          />
+          <a
+            href=""
+            class="btn text-white w-100 mt-6 mb-12"
+            style="
+              background: linear-gradient(45deg, #09acf5, #62db54) !important;
+            "
+            >登入</a
+          >
+        </div>
+        <div class="otherWay border-top pt-6 position-relative">
+          <a href="" class="btn btn-outline-light w-100 mb-6 position-relative"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+              width="24"
+              alt=""
+              class="d-inline position-absolute start-0 ms-8"
+            /><span>Facebook 登入</span></a
+          >
+          <a href="" class="btn btn-outline-light w-100 mb-8"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+              width="24"
+              alt=""
+              class="d-inline position-absolute start-0 ms-8"
+            /><span>Google 登入</span></a
+          >
+          <h3
+            class="fs-4 fw-light position-absolute top-0 start-50 translate-middle bg-secondary-dark px-4"
+          >
+            其他登入方式
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

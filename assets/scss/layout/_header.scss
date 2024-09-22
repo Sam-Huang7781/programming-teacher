@@ -9,11 +9,11 @@
   overflow: hidden;
   white-space: nowrap;
   @media screen and (max-width: 992px) {
-    background-image: url(../images/logo2.svg); 
+    background-image: url(../images/logo2.svg);
   }
 }
 
-ul a:hover{
+ul a:hover {
   background-color: #909090;
 }
 
@@ -23,12 +23,26 @@ ul a:hover{
 }
 
 .navbar::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 2px; /* 邊框的高度 */
-  background: linear-gradient(to left, #09ACF5 50%, #62DB54 50%);
+  background: linear-gradient(to left, #09acf5 50%, #62db54 50%);
   z-index: -1; /* 讓邊框在nav後面 */
+}
+
+.loginModal {
+  .btn-close::before,
+  .btn-close::after {
+    width: 1.2em; /* 調整 X 的寬度 */
+    height: 0.8em; /* 調整 X 的粗細 */
+    background-color: black; /* 改變 X 的顏色 */
+  }
+  ::placeholder {
+    color: #888; /* 修改顏色 */
+    font-size: 1rem; /* 修改字體大小 */
+    margin-left: 4px;
+}
 }
