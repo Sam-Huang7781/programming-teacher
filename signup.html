@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>homepage</title>
+    <script type="module" crossorigin src="/programming-teacher/assets/main-596ba38c.js"></script>
+    <link rel="stylesheet" href="/programming-teacher/assets/main-7a073a4f.css">
+  </head>
+  <body>
+    <header class="header bg-secondary-dark">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg py-4 p-lg-0">
+      <a class="navbar-brand" href="./index.html">
+        <h1 class="logo">程式家教</h1>
+      </a>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span>
+          <div
+            style="width: 20px; height: 4px; background-color: #62db54"
+          ></div>
+          <div
+            style="
+              margin-top: 4px;
+              width: 20px;
+              height: 4px;
+              background-color: #62db54;
+            "
+          ></div
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item text-center">
+            <a
+              class="nav-link active text-white py-lg-8 px-lg-6"
+              href="./index.html"
+              >首頁</a
+            >
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link text-white py-lg-8 px-lg-6" href="./course.html"
+              >課程介紹</a
+            >
+          </li>
+          <li
+            class="nav-item text-center"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            <a
+              class="nav-link text-white py-lg-8 px-lg-6 fs-lg-4 d-flex align-items-center justify-content-center"
+              href="#"
+            >
+              <span class="material-icons text-white me-1">
+                account_circle </span
+              ><span>登入</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Modal -->
+<section
+  class="loginModal modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-secondary-dark border-white text-white">
+      <div class="modal-header position-relative border-0 mt-4">
+        <h5
+          class="modal-title fs-6 position-absolute start-50 top-50 translate-middle"
+          id="loginModalLabel"
+        >
+          登入
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body mx-auto" style="width: 330px">
+        <div class="mb-8">
+          <label for="loginFormControlInput1" class="form-label">信箱</label>
+          <input
+            type="email"
+            class="form-control bg-primary-dark text-white"
+            id="loginFormControlInput1"
+            placeholder="請輸入信箱"
+          />
+        </div>
+        <div>
+          <label for="einputPassword" class="form-label">密碼</label>
+          <input
+            type="password"
+            class="form-control bg-primary-dark text-white"
+            id="inputPassword"
+            placeholder="請輸入密碼"
+          />
+          <a
+            href=""
+            class="btn text-white w-100 mt-6 mb-12"
+            style="
+              background: linear-gradient(45deg, #09acf5, #62db54) !important;
+            "
+            >登入</a
+          >
+        </div>
+        <div class="otherWay border-top pt-6 position-relative">
+          <a href="" class="btn btn-outline-light w-100 mb-6 position-relative"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+              width="24"
+              alt=""
+              class="d-inline position-absolute start-0 ms-8"
+            /><span>Facebook 登入</span></a
+          >
+          <a href="" class="btn btn-outline-light w-100 mb-8"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+              width="24"
+              alt=""
+              class="d-inline position-absolute start-0 ms-8"
+            /><span>Google 登入</span></a
+          >
+          <h3
+            class="fs-4 fw-light position-absolute top-0 start-50 translate-middle bg-secondary-dark px-4"
+          >
+            其他登入方式
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- signup -->
+    <section class="signup bg-primary-dark">
+      <div class="container pt-8">
+        <div class="row position-relative">
+          <div
+            class="offset-lg-2 col-lg-8 d-flex justify-content-center overflow-hidden"
+          >
+            <div class="col-4 step text-center">
+              <span class="circle text-white bg-primary-green rounded-circle"
+                >1</span
+              >
+              <p class="label text-primary-green mt-2">課程報名</p>
+            </div>
+            <div class="col-4 step text-center">
+              <span
+                class="circle text-white bg-secondary-dark border rounded-circle"
+                >2</span
+              >
+              <p class="label text-white mt-2">信用卡付款</p>
+            </div>
+            <div class="col-4 step text-center">
+              <span
+                class="circle text-white bg-secondary-dark border rounded-circle"
+                >3</span
+              >
+              <p class="label text-white mt-2">付款成功</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="py-lg-6 py-4 text-center text-white bg-secondary-dark">
+  Coding Home © 2022 All Rights Reserved
+</footer>
+
+    
+  </body>
+</html>
+
+
