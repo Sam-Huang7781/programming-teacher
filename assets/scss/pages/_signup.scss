@@ -39,4 +39,22 @@
     left: -50%;
     width: 100%;
   }
+  form{
+    input{
+      background-color: #1C1C1C;
+      color: #ffffff;
+    }
+    input::placeholder{
+      color: #ffffff;
+    }
+
+    .form-select{
+      background-color: #1C1C1C;
+      color: #ffffff;
+    }
+    .form-select:focus{
+      background-color: #ffffff;
+      color: #1C1C1C;
+    }
+  }
 }

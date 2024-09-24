@@ -1,4 +1,4 @@
 import './assets/scss/all.scss';
-import { Tooltip, Toast, Popover, Collapse } from 'bootstrap';
+import 'bootstrap';
 console.log("Hello world!");
 

@@ -22,41 +22,191 @@
     <%- include('./layout/header'); -%>
 
     <!-- signup -->
-    <section class="signup bg-primary-dark">
-      <div class="container pt-8">
-        <div class="row position-relative">
-          <div
-            class="offset-lg-2 col-lg-8 d-flex justify-content-center overflow-hidden"
-          >
-            <div class="col-4 step text-center">
-              <span class="circle text-white bg-primary-green rounded-circle"
-                >1</span
-              >
-              <p class="label text-primary-green mt-2">課程報名</p>
+    <section class="signup bg-black">
+      <div class="bg-primary-dark position-relative pt-8">
+        <div
+          class="offset-lg-2 col-lg-8 d-flex justify-content-center overflow-hidden"
+        >
+          <div class="col-4 step text-center">
+            <span class="circle text-white bg-primary-green rounded-circle"
+              >1</span
+            >
+            <p class="label text-primary-green mt-2">課程報名</p>
+          </div>
+          <div class="col-4 step text-center">
+            <span
+              class="circle text-white bg-secondary-dark border rounded-circle"
+              >2</span
+            >
+            <p class="label text-white mt-2">信用卡付款</p>
+          </div>
+          <div class="col-4 step text-center">
+            <span
+              class="circle text-white bg-secondary-dark border rounded-circle"
+              >3</span
+            >
+            <p class="label text-white mt-2">付款成功</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row bg-primary-dark my-12">
+          <div class="col-lg-3 bg-black"></div>
+          <div class="col-lg-9 ps-25 pe-6">
+            <h3 class="text-center fs-6 text-white py-12">課程報名</h3>
+            <h5 class="text-white mb-2">選擇付款方式</h5>
+            <div class="button-list1 gap-4 d-xl-flex d-none">
+              <div class="payment">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green py-4 px-8"
+                >
+                  信用卡付款
+                </button>
+              </div>
+              <div class="payment">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green py-4 px-8"
+                >
+                  超商繳款
+                </button>
+              </div>
+              <div class="payment">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green py-4 px-8"
+                >
+                  ATM轉帳
+                </button>
+              </div>
+              <div class="payment">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green py-4 px-8"
+                >
+                  12期分期付款
+                </button>
+              </div>
             </div>
-            <div class="col-4 step text-center">
-              <span
-                class="circle text-white bg-secondary-dark border rounded-circle"
-                >2</span
-              >
-              <p class="label text-white mt-2">信用卡付款</p>
+            <div class="button-list2 d-lg-flex row d-xl-none g-2">
+              <div class="payment col-md-3 col-6 text-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green"
+                  style="width: 140px; height: 50px"
+                >
+                  信用卡繳款
+                </button>
+              </div>
+              <div class="payment col-md-3 col-6 text-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green"
+                  style="width: 140px; height: 50px"
+                >
+                  超商繳款
+                </button>
+              </div>
+              <div class="payment col-md-3 col-6 text-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green"
+                  style="width: 140px; height: 50px"
+                >
+                  ATM轉帳
+                </button>
+              </div>
+              <div class="payment col-md-3 col-6 text-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary-green"
+                  style="width: 140px; height: 50px"
+                >
+                  12期分期付款
+                </button>
+              </div>
             </div>
-            <div class="col-4 step text-center">
-              <span
-                class="circle text-white bg-secondary-dark border rounded-circle"
-                >3</span
-              >
-              <p class="label text-white mt-2">付款成功</p>
-            </div>
+            <form action="" class="pt-8 pb-12" style="color: #8a8a8a">
+              <h5 class="text-white mb-6">訂單資訊</h5>
+              <div class="row">
+                <div class="col-6">
+                  <label for="name" class="form-label">姓名</label
+                  ><input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="請輸入姓名"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="tel" class="form-label">電話</label
+                  ><input
+                    type="tel"
+                    id="tel"
+                    class="form-control"
+                    placeholder="請輸入電話號碼"
+                  />
+                </div>
+                <div class="col-12 my-6">
+                  <label for="email" class="form-label">Email</label
+                  ><input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="請輸入Email"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="lesson" class="form-label">課程</label
+                  ><select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>10堂50分鐘</option>
+                    <option value="1">5堂120分鐘</option>
+                    <option value="2">8堂60分鐘</option>
+                    <option value="3">12堂50分鐘</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label for="tel" class="form-label">想預約的日期</label
+                  ><input
+                    type="tel"
+                    id="tel"
+                    class="form-control"
+                    placeholder="請選擇日期"
+                  />
+                </div>
+                <div class="col-12 mt-6">
+                  <label for="email" class="form-label">上課地點</label
+                  ><input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="請輸入上課地點"
+                  />
+                </div>
+                <div
+                  class="col-12 mt-6 d-flex justify-content-between align-items-center"
+                >
+                  <span>NT$1600</span>
+                  <button
+                    type="submit"
+                    class="btn btn-primary-green text-white py-2 px-12"
+                    style="background: linear-gradient(45deg, #09acf5, #62db54)"
+                  >
+                    前往結賬
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
-
-
