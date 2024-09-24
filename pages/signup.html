@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>homepage</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <!-- signup -->
+    <section class="signup bg-primary-dark">
+      <div class="container pt-8">
+        <div class="row position-relative">
+          <div
+            class="offset-lg-2 col-lg-8 d-flex justify-content-center overflow-hidden"
+          >
+            <div class="col-4 step text-center">
+              <span class="circle text-white bg-primary-green rounded-circle"
+                >1</span
+              >
+              <p class="label text-primary-green mt-2">課程報名</p>
+            </div>
+            <div class="col-4 step text-center">
+              <span
+                class="circle text-white bg-secondary-dark border rounded-circle"
+                >2</span
+              >
+              <p class="label text-white mt-2">信用卡付款</p>
+            </div>
+            <div class="col-4 step text-center">
+              <span
+                class="circle text-white bg-secondary-dark border rounded-circle"
+                >3</span
+              >
+              <p class="label text-white mt-2">付款成功</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
+
+

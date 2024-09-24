@@ -1,0 +1,42 @@
+/* Styles for the progress steps */
+.signup {
+  .step {
+    position: relative;
+  }
+
+  .step .circle {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensure the circle is above the line */
+    width: 28px; /* Fixed width */
+    height: 28px; /* Fixed height to maintain the circle shape */
+    border-radius: 50%;
+  }
+
+  /* Line between the steps */
+  .step::before {
+    content: "";
+    position: absolute;
+    top: 20%; /* Adjust the position to align the line with the center of the circles */
+    height: 2px;
+    background-color: white;
+    z-index: 0; /* The line should be behind the circles */
+    transform: translateY(-100%);
+  }
+
+  .step:first-child::before {
+    display: none;
+  }
+
+  .step:nth-child(2)::before {
+    left: -50%;
+    width: 100%;
+  }
+
+  .step:last-child::before {
+    left: -50%;
+    width: 100%;
+  }
+}
