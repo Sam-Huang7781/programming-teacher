@@ -39,22 +39,33 @@
     left: -50%;
     width: 100%;
   }
-  form{
-    input{
-      background-color: #1C1C1C;
+  form {
+    input {
+      //設計稿樣式
+      background-color: #1c1c1c;
       color: #ffffff;
     }
-    input::placeholder{
+    input::placeholder {
+      //提示文字
       color: #ffffff;
     }
 
-    .form-select{
-      background-color: #1C1C1C;
+    .form-select {
+      //不是input，要另外設定成設計稿樣式
+      background-color: #1c1c1c;
       color: #ffffff;
     }
-    .form-select:focus{
+    .form-select:focus,
+    .form-select:hover {
+      //反白使用者填寫過的內容
       background-color: #ffffff;
-      color: #1C1C1C;
+      color: #1c1c1c;
+    }
+    .pickup-date:focus,
+    .pickup-date:hover {
+      //不是input，要另外設定成設計稿樣式
+      background-color: #ffffff;
+      color: #1c1c1c;
     }
   }
 }
