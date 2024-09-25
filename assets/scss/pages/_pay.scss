@@ -1,0 +1,38 @@
+/* Styles for the progress steps */
+.pay {
+  .container {
+    width: 416px;
+    @media screen and (max-width: 992px) {
+      width: 336px;
+    }
+  }
+  form {
+    input {
+      //設計稿樣式
+      background-color: #1c1c1c;
+      color: #ffffff;
+    }
+    input::placeholder {
+      //提示文字
+      color: #c1c1c1;
+    }
+
+    .form-select {
+      //不是input，要另外設定成設計稿樣式
+      background-color: #1c1c1c;
+      color: #ffffff;
+    }
+    .form-select:focus,
+    .form-select:hover {
+      //反白使用者填寫過的內容
+      background-color: #ffffff;
+      color: #1c1c1c;
+    }
+    .pickup-date:focus,
+    .pickup-date:hover {
+      //不是input，要另外設定成設計稿樣式
+      background-color: #ffffff;
+      color: #1c1c1c;
+    }
+  }
+}
