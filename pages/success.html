@@ -49,6 +49,25 @@
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 批量處理第二個和第三個 .circle 及其對應的 .label
+        [1, 2].forEach(function (index) {
+          // 更新 .circle 的樣式
+          $(".circle")
+            .eq(index)
+            .removeClass("bg-secondary-dark border")
+            .addClass("bg-primary-green");
+
+          // 更新 .label 的樣式
+          $(".label")
+            .eq(index)
+            .removeClass("text-white")
+            .addClass("text-primary-green");
+        });
+      });
+    </script>
   </body>
 </html>
 

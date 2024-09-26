@@ -23,11 +23,13 @@
 
     <!-- pay -->
     <section class="pay">
-        <%- include('./layout/step'); -%>
+      <%- include('./layout/step'); -%>
       <div class="container my-12 bg-primary-dark">
-        <form action="" class="py-lg-12 py-6 px-6" style="color: #8a8a8a;">
+        <form action="" class="py-lg-12 py-6 px-6" style="color: #8a8a8a">
           <h4 class="text-white mb-lg-12 mb-6 text-center">信用卡付款</h4>
-          <h6 class="text-white mb-6 text-center text-lg-start">請輸入信用卡資訊進行付款</h6>
+          <h6 class="text-white mb-6 text-center text-lg-start">
+            請輸入信用卡資訊進行付款
+          </h6>
           <div class="row">
             <div class="col-12">
               <label for="account" class="form-label">信用卡帳號</label
@@ -37,7 +39,6 @@
                 class="form-control"
                 placeholder="Xxxx-xxxx-xxxx-xxxx"
               />
-            </div>
             </div>
             <div class="col-12 my-6">
               <label for="password" class="form-label">安全碼</label
@@ -62,11 +63,12 @@
             >
               <span class="fs-5 text-white d-block mb-lg-0 mb-6">NT$1600</span>
               <button
-                type="submit"
+                type="button"
                 class="btn btn-primary-green text-white py-2 w-100 ms-lg-30"
                 style="background: linear-gradient(45deg, #09acf5, #62db54)"
+                onclick="window.location.href='success.html'"
               >
-              下一步
+                下一步
               </button>
             </div>
           </div>
@@ -77,6 +79,13 @@
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.circle').eq(1).removeClass('bg-secondary-dark').addClass('bg-primary-green');
+        $('.circle').eq(1).removeClass('border');
+        $('.label').eq(1).removeClass('text-white').addClass('text-primary-green');
+      });
+    </script>
   </body>
 </html>
-
